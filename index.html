@@ -3,26 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tes Online</title>
+    <title>Sistem Sedang Diperbarui</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe {
-            border: none;
-            width: 100%;
-            height: 100vh; /* Mengisi seluruh layar */
+        :root {
+            --bg: #e0e5ec;
+            --shadow-light: #ffffff;
+            --shadow-dark: #a3b1c6;
+            --text: #4a5568;
+        }
+
+        body {
+            background-color: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+        }
+
+        .neu-card {
+            padding: 50px 40px;
+            border-radius: 50px;
+            background: var(--bg);
+            box-shadow: 20px 20px 60px var(--shadow-dark),
+                        -20px -20px 60px var(--shadow-light);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            border-radius: 20px;
+            background: var(--bg);
+            box-shadow: 6px 6px 12px var(--shadow-dark),
+                        -6px -6px 12px var(--shadow-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background: var(--bg);
+            box-shadow: inset 4px 4px 8px var(--shadow-dark),
+                        inset -4px -4px 8px var(--shadow-light);
+            font-size: 14px;
+            font-weight: bold;
+            color: #3182ce;
         }
     </style>
 </head>
 <body>
-<iframe 
-    src="https://script.google.com/macros/s/AKfycbxMhvCvYWpzFVY_emO5EXuvgRI1wifVxmbRH8hwrxYbTIJtCaMCMU63H2uGr1uwE8e-Rw/exec" 
-    style="border: none; width: 100%; height: 100vh;" 
-    allow="fullscreen" 
-    allowfullscreen="true">
-</iframe>
-     
-</body>
+
+    <div class="neu-card">
+        <div class="icon-box">🛠️</div>
+        <h1>Sedang Pemeliharaan</h1>
+        <p>Mohon maaf, bukan dalam periode test.</p>
+        <div class="badge">Akan aktif jika test dimulai</div>
+    </div>
+
+    </body>
 </html>
